@@ -6,10 +6,10 @@ import java.io.IOException;
 
 public class JsonTreeParser {
     
-    public void treeParser(String json) throws JsonParseException, IOException {
+    public void treeParser(String path) { //throws JsonParseException, IOException {
+        
         
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(json);
-        
     }
 }
