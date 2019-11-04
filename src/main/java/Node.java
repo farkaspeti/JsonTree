@@ -13,17 +13,6 @@ public class Node<T> {
         this.data = data;
     }
     
-    public Node<T> addChild(Node<T> child) {
-        child.setParent(this);
-        this.children.add(child);
-        return child;
-    }
-    
-    public void addChildren(List<Node<T>> children) {
-        children.forEach(each -> each.setParent(this));
-        this.children.addAll(children);
-    }
-    
     public List<Node<T>> getChildren() {
         return children;
     }
@@ -43,11 +32,4 @@ public class Node<T> {
     public Node<T> getParent() {
         return parent;
     }
-    
-    
-   /* public static <T> void printTree(Node<T> node, String appender) {
-        System.out.println(appender + node.getData());
-        node.getChildren().forEach(each -> printTree(each, appender + appender));
-    }
-    */
 }

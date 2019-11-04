@@ -9,7 +9,7 @@ import java.io.IOException;
 public class JsonFileReader {
     
     
-    public JSONArray fileReader() throws IOException, ParseException {
+    public static JSONArray fileReader() throws IOException, ParseException {
         String fileName = "vehicles.json";
         ClassLoader cl = new Main().getClass().getClassLoader();
         JSONParser parser = new JSONParser();
